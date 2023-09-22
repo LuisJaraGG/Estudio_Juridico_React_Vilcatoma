@@ -18,9 +18,9 @@ const HeroPage = () => {
         <div className=" flex flex-col justify-center items-center h-full w-full fade-in">
           <p className="text-center text-white z-10 text-base font-bold md:text-3xl px-6 max-[400px]:text-xl">
             Servicios y asesoramientos legales
-          <hr className="z-10 w-36 mx-auto  flex md:w-72 min-[370px]:border-2 rounded-full mb-4" />
+            <hr className="z-10 w-36 mx-auto  flex md:w-72  rounded-full mb-4" />
           </p>
-          <button className="mt-4 md:mt-0 z-10 rounded-3xl border-2 border-white bg-transparent  text-white py-1 px-4 hover:border-yellow-600 font-medium  hover:bg-yellow-600 transition-all duration-300">
+          <button className="mt-4 md:mt-0 z-10 rounded-3xl border-2 border-white bg-transparent  text-white py-1 px-4 hover:border-[#B5853E] font-medium  hover:bg-[#B5853E] transition-all duration-300">
             Conócenos
           </button>
         </div>

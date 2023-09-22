@@ -6,20 +6,19 @@ import Team from "./components/Team";
 import LocateUs from "./components/LocateUs";
 import Contact from "./components/Contact";
 import NavMovil from "./components/NavMovil";
-
+import NavDesktop from "./components/NavDesktop";
 function App() {
   return (
-    <div>
-      <HeroPage></HeroPage>
+    <div className="scroll-smooth">
+      <NavDesktop></NavDesktop>
       <NavMovil></NavMovil>
-      <main className="scroll-smooth  ">
+      <HeroPage></HeroPage>
         <About></About>
         <Services></Services>
         <WhyUs></WhyUs>
         <Team></Team>
         <LocateUs></LocateUs>
         <Contact></Contact>
-      </main>
     </div>
   );
 }

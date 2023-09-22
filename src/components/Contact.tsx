@@ -1,4 +1,3 @@
-
 import { zodResolver } from "@hookform/resolvers/zod";
 import * as z from "zod";
 import { useForm } from "react-hook-form";
@@ -16,7 +15,6 @@ import {
   FormLabel,
   FormMessage,
 } from "./ui/form";
-
 
 const formSchema = z.object({
   name: z
@@ -79,92 +77,109 @@ const Contact = () => {
   const isLoading = form.formState.isSubmitting;
 
   return (
-    <div id="contactanos" className=" relative h-screen md:h-full pb-20 pt-24">
-      <div className="h-full   flex flex-col gap-y-16 justify-center max-w-[550px] mx-auto px-8 ">
-        <div
-          ref={(el) => cardRefs.current.push(el)}
-          className="text-center opacity-0"
-        >
-          <p className="text-[32px] font-black txt-default">Contactanos</p>
-          <hr className="border-default border-1 w-52 mx-auto" />
-          <p className="text-slate-600 font-normal text-sm ">
-            Si tienes interes contacta con nosotros y podremos asesorarte
-          </p>
+    <div
+      id="contactanos"
+      className=" md:flex md:h-screen md:items-center  relative h-full lg:h-screen  pb-20   pt-24 "
+    >
+      <div className="md:max-w-[900px] md:mx-auto md:flex md:items-center  ">
+        <div className=" hidden md:flex md:w-1/2 md:justify-center md:items-center">
+          <div className="">
+            <LottieW
+              path={"plane"}
+              id={"contactanos-fondo4"}
+              styles={"w-full h-full"}
+            ></LottieW>
+          </div>
         </div>
-        <div ref={(el) => cardRefs.current.push(el)} className="opacity-0 ">
-          <Form {...form}>
-            <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-4">
-              <FormField
-                control={form.control}
-                name="name"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Nombre</FormLabel>
-                    <FormControl>
-                      <Input
-                        className="w/full"
-                        disabled={isLoading}
-                        placeholder="Nombre"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="email"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Email</FormLabel>
-                    <FormControl>
-                      <Input
-                        className="w/full"
-                        disabled={isLoading}
-                        placeholder="usuario@gmail.com"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <FormField
-                control={form.control}
-                name="message"
-                render={({ field }) => (
-                  <FormItem>
-                    <FormLabel>Mensaje</FormLabel>
-                    <FormControl>
-                      <Textarea
-                        className="w/full"
-                        disabled={isLoading}
-                        rows={5}
-                        placeholder="Descripción de su cunsulta"
-                        {...field}
-                      />
-                    </FormControl>
-                    <FormMessage />
-                  </FormItem>
-                )}
-              />
-              <Button
-                disabled={isLoading}
-                type="submit"
-                className=" bg-default hover:from-blue-900 hover:to-blue-800 w-full rounded-none"
+        <div className="h-full  flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8 px-8 md:w-1/2">
+          <div
+            ref={(el) => cardRefs.current.push(el)}
+            className="text-center opacity-0"
+          >
+            <p className="text-[32px] font-black txt-default ">Contactanos</p>
+            <hr className="border-default border-1 w-52 mx-auto" />
+            <p className="text-slate-600 font-normal text-sm ">
+              Si tienes interes contacta con nosotros y podremos asesorarte
+            </p>
+          </div>
+          <div ref={(el) => cardRefs.current.push(el)} className="opacity-0 ">
+            <Form {...form}>
+              <form
+                onSubmit={form.handleSubmit(onSubmit)}
+                className="space-y-4 md:space-y-1"
               >
-                Enviar
-              </Button>
-            </form>
-          </Form>
-        </div>
+                <FormField
+                  control={form.control}
+                  name="name"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Nombre</FormLabel>
+                      <FormControl>
+                        <Input
+                          className="w/full"
+                          disabled={isLoading}
+                          placeholder="Nombre"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="email"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Email</FormLabel>
+                      <FormControl>
+                        <Input
+                          className="w/full"
+                          disabled={isLoading}
+                          placeholder="usuario@gmail.com"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="message"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Mensaje</FormLabel>
+                      <FormControl>
+                        <Textarea
+                          className="w/full"
+                          disabled={isLoading}
+                          rows={5}
+                          placeholder="Descripción de su cunsulta"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <Button
+                  disabled={isLoading}
+                  type="submit"
+                  className=" bg-default hover:from-blue-900 hover:to-blue-800 w-full rounded-none"
+                >
+                  Enviar
+                </Button>
+              </form>
+            </Form>
+          </div>
 
-        <div className="flex flex-row gap-x-10 justify-center">
-          <FaFacebook size={30} className="txt-default "></FaFacebook>
-          <FaYoutube size={30} className="txt-default "></FaYoutube>
-          <FaTwitter size={30} className="txt-default "></FaTwitter>
-          <FaInstagram size={30} className="txt-default "></FaInstagram>
+          <div className="flex flex-row gap-x-10 justify-center">
+            <FaFacebook size={30} className="txt-default "></FaFacebook>
+            <FaYoutube size={30} className="txt-default "></FaYoutube>
+            <FaTwitter size={30} className="txt-default "></FaTwitter>
+            <FaInstagram size={30} className="txt-default "></FaInstagram>
+          </div>
         </div>
       </div>
 
@@ -176,7 +191,7 @@ const Contact = () => {
           styles={"h-full  "}
         ></LottieW>
       </div>
-      <div className="absolute bottom-0  left-0 -z-10 ">
+      <div className="absolute bottom-0  left-0 right-0 -z-10 ">
         <LottieW
           path={"fondo4"}
           id={"contactanos-fondo4"}
