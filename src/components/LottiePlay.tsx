@@ -10,7 +10,7 @@ interface Props {
 
 const LottieW = ({
   path,
-  id,
+  // id,
   styles = "min-w-[100px] min-h-[100px] max-w-[250px]",
 }: Props) => {
   const [animationReady, setAnimationReady] = useState(false);

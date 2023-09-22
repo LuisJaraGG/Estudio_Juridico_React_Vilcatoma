@@ -6,14 +6,14 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { useToast } from "./ui/use-toast";
 import { Textarea } from "./ui/textarea";
-import { Toaster } from "./ui/toaster";
+// import { Toaster } from "./ui/toaster";
 import LottieW from "./LottiePlay";
 import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 import {
   Form,
   FormControl,
-  FormDescription,
+  // FormDescription,
   FormField,
   FormItem,
   FormLabel,
@@ -70,7 +70,7 @@ const Contact = () => {
   function onSubmit(values: z.infer<typeof formSchema>) {
     console.log(values);
   }
-  const { toast } = useToast();
+  // const { toast } = useToast();
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
