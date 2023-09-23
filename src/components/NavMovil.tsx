@@ -9,8 +9,6 @@ import {
 } from "../components/ui/sheet";
 
 const NavMovil = () => {
-
-
   return (
     <div className=" ">
       <div className="md:hidden flex flex-row justify-between items-center px-10 bg-zinc-950 opacity-90  p-2 z-30 fixed top-0 left-0 right-0">
@@ -62,7 +60,7 @@ const NavMovil = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <li>
-                        <a href="#contact">Contactanos</a>
+                        <a href="#contactanos">Contactanos</a>
                       </li>
                     </SheetClose>
                   </ul>
