@@ -22,10 +22,10 @@ const HeroPage = () => {
             className="w-28 md:w-48 z-10"
           />
           <p className=" leading-tight text-center text-white z-10   md:text-xl  mix-[400px]:text-xl mt-5 tracking-wider mb-3 ">
-            <hr className="z-10 w-44 mx-auto  flex md:w-52  rounded-full  md:-mb-1 px-1" />
+            <hr className="z-10 mx-10   flex   rounded-full  md:-mb-1 " />
             Servicios y asesoramientos legales
           </p>
-          <button className=" z-10 rounded-3xl border-2 border-white bg-transparent  text-white py-1 px-4 hover:border-[#B5853E] font-medium  hover:bg-[#B5853E] transition-all duration-300">
+          <button className=" z-10 rounded-3xl border border-white bg-transparent  text-white py-1 px-4 hover:border-[#B5853E] font-normal  hover:bg-[#B5853E] transition-all duration-300">
             <a href="#about">Conócenos</a>
           </button>
         </div>
