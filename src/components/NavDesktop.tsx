@@ -5,7 +5,7 @@ const NavDesktop = () => {
         <img
           src="/images/logo.png"
           alt="Logo Vilcatoma y abogados"
-          className="w-10 h-10"
+          className="h-10  "
         />
         <ul className="flex  gap-x-3 text-white items-center text-sm">
           <a href="#hero">
