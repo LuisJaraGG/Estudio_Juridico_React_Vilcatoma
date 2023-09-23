@@ -81,8 +81,10 @@ const Contact = () => {
       id="contactanos"
       className=" md:flex md:h-screen md:items-center  relative h-full lg:h-screen  pb-20   pt-24 "
     >
-      <div className="md:max-w-[900px] md:mx-auto md:flex md:items-center  ">
-        <div className=" hidden md:flex md:w-1/2 md:justify-center md:items-center">
+      {/* hasta 1088 px es mono */}
+
+      <div className="min-[1268px]:max-w-[900px] md:mx-auto md:flex md:items-center  ">
+        <div className=" hidden min-[1268px]:flex min-[1268px]:w-1/2 min-[1268px]:justify-center min-[1268px]:items-center">
           <div className="">
             <LottieW
               path={"plane"}
@@ -91,7 +93,7 @@ const Contact = () => {
             ></LottieW>
           </div>
         </div>
-        <div className="h-full  flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8 px-8 md:w-1/2">
+        <div className="h-full  flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8 px-8 min-[1268px]:w-1/2">
           <div
             ref={(el) => cardRefs.current.push(el)}
             className="text-center opacity-0"

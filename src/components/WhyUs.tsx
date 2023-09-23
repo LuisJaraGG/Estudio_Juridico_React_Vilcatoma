@@ -5,7 +5,7 @@ const WhyUs = () => {
   return (
     <div
       id="why"
-      className="h-full relative  md:flex md:justify-center md:flex-col "
+      className="h-full relative lg:h-screen md:flex md:justify-center md:flex-col "
     >
       <div className="md:max-w-[900px] md:mx-auto">
         <div className="w-full pt-16 md:pt-24">
@@ -49,7 +49,7 @@ const WhyUs = () => {
                 </div>
 
                 <div className="  absolute w-full    top-[-10px] flex flex-row justify-center items-center">
-                  <div className="bg-amber-200 w-11 h-11 shadow-md flex justify-center items-center rounded-full">
+                  <div className="bg-amber-50 w-11 h-11 shadow-md flex justify-center items-center rounded-full">
                     {iconoelement}
                   </div>
                 </div>
