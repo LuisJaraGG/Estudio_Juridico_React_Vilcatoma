@@ -177,10 +177,16 @@ const Contact = () => {
           </div>
 
           <div className="flex flex-row gap-x-10 justify-center">
-            <FaFacebook size={30} className="txt-default "></FaFacebook>
-            <FaYoutube size={30} className="txt-default "></FaYoutube>
-            <FaTwitter size={30} className="txt-default "></FaTwitter>
+            <a href="https://www.facebook.com/yenivilcatomaofic?locale=es_LA">
+              <FaFacebook size={30} className="txt-default "></FaFacebook>
+            </a>
+            <a href="https://twitter.com/YeniVilcatoma2">
+              <FaTwitter size={30} className="txt-default "></FaTwitter>
+            </a>
+            <a href="https://www.instagram.com/yeni_vilcatoma_2/">
+
             <FaInstagram size={30} className="txt-default "></FaInstagram>
+            </a>
           </div>
         </div>
       </div>

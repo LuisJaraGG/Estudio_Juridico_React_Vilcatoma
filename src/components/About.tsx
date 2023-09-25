@@ -44,10 +44,13 @@ const About = () => {
               <li className="txt-default">Ligitación</li>
               <li className="txt-default">Solución de controversias</li>
               <li className="txt-default">Asesorías</li>
+              <a href="#service">
+
               <li className="txt-default flex items-center hover:text-black transition-none duration-700">
                 ver mas
                 <FaChevronRight className="ml-2 " />
               </li>
+              </a>
             </ul>
           </div>
         </div>
