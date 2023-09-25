@@ -79,7 +79,7 @@ const Contact = () => {
   return (
     <div
       id="contactanos"
-      className=" md:flex md:h-screen md:items-center  relative h-full lg:h-screen  pb-20   pt-24 "
+      className=" md:flex  h-screen md:items-center  relative pb-20   pt-24 min-h-[805px] lg:min-h-[0px] "
     >
       {/* hasta 1088 px es mono */}
 
@@ -93,7 +93,7 @@ const Contact = () => {
             ></LottieW>
           </div>
         </div>
-        <div className="h-full  flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8 px-8 min-[1268px]:w-1/2">
+        <div className=" flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8 px-8 min-[1268px]:w-1/2">
           <div
             ref={(el) => cardRefs.current.push(el)}
             className="text-center opacity-0"

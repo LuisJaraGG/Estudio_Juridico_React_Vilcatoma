@@ -8,7 +8,7 @@ const WhyUs = () => {
       className="h-full relative lg:h-screen md:flex md:justify-center md:flex-col "
     >
       <div className="md:max-w-[900px] md:mx-auto">
-        <div className="w-full pt-16 md:pt-24">
+        <div className="w-full pt-16 md:pt-24 lg:pt-0">
           <div className=" texto-1 flex flex-col items-center text-center pb-16">
             <h1 className="txt-default font-black text-3xl">
               Porque elegirnos
@@ -45,7 +45,7 @@ const WhyUs = () => {
                   <p className="txt-default font-bold text-center ">
                     {eleccion.tittle}
                   </p>
-                  <p className="text-center">{eleccion.description}</p>
+                  <p className="text-center text-slate-600">{eleccion.description}</p>
                 </div>
 
                 <div className="  absolute w-full    top-[-10px] flex flex-row justify-center items-center">

@@ -12,14 +12,20 @@ const NavMovil = () => {
   return (
     <div className=" ">
       <div className="md:hidden flex flex-row justify-between items-center px-10 bg-zinc-950 opacity-90  p-2 z-30 fixed top-0 left-0 right-0">
-        <img src="/images/logo.png" alt="logo vilcatoma" className=" h-8" />
+        <img
+          src="/images/logo-completo.png"
+          alt="logo vilcatoma"
+          className=" h-8"
+        />
         <div className="flex items-center">
           <Sheet>
             <SheetTrigger asChild className="flex items-center">
-              <FaBars
-                size={20}
-                className="transition-opacity duration-400 opacity-100 hover:opacity-0 text-white"
-              ></FaBars>
+              <a href="#hero">
+                <FaBars
+                  size={20}
+                  className="transition-opacity duration-400 opacity-100 hover:opacity-0 text-white"
+                ></FaBars>
+              </a>
             </SheetTrigger>
             <SheetContent
               side={"left"}

@@ -2,7 +2,10 @@ import LottieW from "./LottiePlay";
 import { FaChevronRight } from "react-icons/fa";
 const About = () => {
   return (
-    <div id="about" className="h-screen  relative min-[1090px]:flex ">
+    <div
+      id="about"
+      className="min-h-[653px] h-screen  relative min-[1090px]:flex md:min-h-[560px]"
+    >
       <div className="w-full max-[1090px]:h-full  flex flex-col min-[1090px]:items-center justify-start  pt-16  md:pt-24 min-[1090px]:pt-0 md:max-w-[900px] md:mx-auto min-[1090px]:my-auto">
         <div className="texto-1 flex flex-col items-center text-center pb-14 md:pb-20 min-[380px]:pb-6 ">
           <h1 className="txt-default font-black text-3xl">Nosotros</h1>
