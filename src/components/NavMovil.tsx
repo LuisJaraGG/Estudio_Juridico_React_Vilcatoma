@@ -20,12 +20,10 @@ const NavMovil = () => {
         <div className="flex items-center">
           <Sheet>
             <SheetTrigger asChild className="flex items-center">
-              <a href="#hero">
-                <FaBars
-                  size={20}
-                  className="transition-opacity duration-400 opacity-100 hover:opacity-0 text-white"
-                ></FaBars>
-              </a>
+              <FaBars
+                size={20}
+                className="transition-opacity duration-400 opacity-100 hover:opacity-0 text-white"
+              ></FaBars>
             </SheetTrigger>
             <SheetContent
               side={"left"}

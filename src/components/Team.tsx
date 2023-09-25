@@ -20,7 +20,7 @@ const Team = () => {
           <p className="text-white font-normal z-10 text-[12px] ">FUNDADORA</p>
         </div>
         {/* Parte de fondo */}
-        <div className="absolute bg-black opacity-20  h-full w-full top-0"></div>
+        <div className="absolute bg-black opacity-70  h-full w-full top-0"></div>
       </div>
 
       <div className=" mt-10 relative">
@@ -104,7 +104,7 @@ const Team = () => {
         {/* Parte del lado contrario del equipo */}
         <div className="md:flex md:flex-row-reverse md:my-10">
           <div className="px-8 text-right relative md:w-1/2 md:pr-16">
-            <div className="md:min-h-[450px]">
+            <div >
               <div>
                 <p className="txt-default font-black">DOCENCIA UNIVERSITARIA</p>
                 <hr className="border-default w-[220px]  ml-auto" />
@@ -169,13 +169,6 @@ const Team = () => {
               </div>
             </div>
 
-            <div className="absolute -top-10   -z-10  -right-8 opacity-20 md:hidden  ">
-              <LottieW
-                path={"fondo3"}
-                id={"contactanos-fondo4"}
-                styles={"h-full  "}
-              ></LottieW>
-            </div>
           </div>
           {/* imagen de la izquierda */}
           <div className="md:w-1/2 ">
