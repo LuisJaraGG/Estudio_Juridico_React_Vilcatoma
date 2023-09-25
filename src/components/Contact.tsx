@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import LottieW from "./LottiePlay";
-import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 
 import {
   Form,
@@ -184,8 +184,7 @@ const Contact = () => {
               <FaTwitter size={30} className="txt-default "></FaTwitter>
             </a>
             <a href="https://www.instagram.com/yeni_vilcatoma_2/">
-
-            <FaInstagram size={30} className="txt-default "></FaInstagram>
+              <FaInstagram size={30} className="txt-default "></FaInstagram>
             </a>
           </div>
         </div>
