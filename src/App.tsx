@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import NavMovil from "./components/NavMovil";
 import NavDesktop from "./components/NavDesktop";
 import TeamDesktop from "./components/TeamDesktop";
+import { Toaster } from "./components/ui/toaster";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import {useEffect} from "react";
@@ -18,7 +19,7 @@ function App() {
   
   return (
     <div className="scroll-smooth">
-      <NavDesktop ></NavDesktop>
+      <NavDesktop></NavDesktop>
       <NavMovil></NavMovil>
       <HeroPage></HeroPage>
       <About></About>
@@ -28,6 +29,7 @@ function App() {
       <Team></Team>
       <LocateUs></LocateUs>
       <Contact></Contact>
+      <Toaster></Toaster>
     </div>
   );
 }

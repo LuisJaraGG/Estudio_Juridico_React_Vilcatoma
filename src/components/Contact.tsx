@@ -1,6 +1,8 @@
 import { zodResolver } from "@hookform/resolvers/zod";
+
 import * as z from "zod";
 import { useForm } from "react-hook-form";
+import { useToast } from "./ui/use-toast";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
@@ -16,64 +18,60 @@ import {
   FormMessage,
 } from "./ui/form";
 
-const formSchema = z.object({
-  name: z
-    .string()
-    .min(3, { message: "Debe tener un minimo de 3 caracteres" })
-    .max(50),
-  email: z.string().email({ message: "El correo no es valido" }),
-  message: z
-    .string()
-    .min(10, { message: "Debe tener un minimo de 10 caracteres" })
-    .max(500),
-});
-
-import { useEffect, useRef } from "react";
-
-const applyFadeIn = (element: HTMLElement | null) => {
-  if (element) {
-    element.classList.remove("opacity-0");
-    element.classList.add("animate-fade-in");
-    element.classList.add("opacity-1");
-  }
-};
 const Contact = () => {
-  const cardRefs = useRef<Array<HTMLDivElement | null>>([]);
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            const targetCard = entry.target as HTMLDivElement;
-            applyFadeIn(targetCard);
-          }
-        });
-      },
-      { threshold: 0.1 }
-    );
-
-    cardRefs.current.forEach((cardRef) => {
-      if (cardRef) {
-        observer.observe(cardRef);
-      }
-    });
-
-    return () => {
-      observer.disconnect();
-    };
-  }, []);
-  function onSubmit(values: z.infer<typeof formSchema>) {
-    console.log(values);
-  }
-  // const { toast } = useToast();
+  const formSchema = z.object({
+    name: z
+      .string()
+      .min(3, { message: "Debe tener un minimo de 3 caracteres" })
+      .max(50),
+    phone: z.string().length(9, { message: "Debe ingresar 9 dígitos" }),
+    email: z.string().email({ message: "El correo no es valido" }),
+    message: z
+      .string()
+      .min(10, { message: "Debe tener un minimo de 10 caracteres" })
+      .max(500),
+  });
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
       name: "",
+      phone: "",
       email: "",
       message: "",
     },
   });
+
+  const { toast } = useToast();
+  function onSubmit(values: z.infer<typeof formSchema>) {
+    fetch("https://node-nodemailer-provider.vercel.app/api/mail", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(values),
+    })
+      .then((res) => {
+        if (res.ok) {
+          toast({
+            description: "Mensaje enviado",
+            duration: 2000,
+          });
+          form.reset();
+        } else {
+          toast({
+            variant: "destructive",
+            description: `Ocurrio un error al enviar el mensaje!`,
+          });
+        }
+      })
+      .catch((error) => {
+        toast({
+          variant: "destructive",
+          description: `Ocurri'o un error en: ${error}`,
+        });
+      });
+  }
+
   const isLoading = form.formState.isSubmitting;
 
   return (
@@ -95,8 +93,7 @@ const Contact = () => {
         </div>
         <div className=" flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8 px-8 min-[1268px]:w-1/2">
           <div
-            ref={(el) => cardRefs.current.push(el)}
-            className="text-center opacity-0"
+            className="text-center "
             data-aos="flip-up"
             data-aos-duration="1000"
           >
@@ -106,12 +103,7 @@ const Contact = () => {
               Si tienes interes contacta con nosotros y podremos asesorarte
             </p>
           </div>
-          <div
-            ref={(el) => cardRefs.current.push(el)}
-            className="opacity-0 "
-            data-aos="fade-in"
-            data-aos-duration="1000"
-          >
+          <div data-aos="fade-in" data-aos-duration="1000">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -128,6 +120,24 @@ const Contact = () => {
                           className="w/full"
                           disabled={isLoading}
                           placeholder="Nombre"
+                          {...field}
+                        />
+                      </FormControl>
+                      <FormMessage />
+                    </FormItem>
+                  )}
+                />
+                <FormField
+                  control={form.control}
+                  name="phone"
+                  render={({ field }) => (
+                    <FormItem>
+                      <FormLabel>Celular</FormLabel>
+                      <FormControl>
+                        <Input
+                          className="w/full"
+                          disabled={isLoading}
+                          placeholder="Celular"
                           {...field}
                         />
                       </FormControl>
