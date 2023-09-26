@@ -54,7 +54,7 @@ const NavMovil = () => {
                     </SheetClose>
                     <SheetClose asChild>
                       <li>
-                        <a href="#team">Equipo</a>
+                        <a  href="#team2">Equipo</a>
                       </li>
                     </SheetClose>
                     <SheetClose asChild>

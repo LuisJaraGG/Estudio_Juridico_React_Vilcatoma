@@ -6,30 +6,25 @@ const TeamDesktop = () => {
       <div className=" w-[900px] mx-auto my-auto">
         <div
           className=" relative w-full  mb-10"
-          style={{
-            backgroundImage: `url('/images/fondo2.webp')`,
-            backgroundSize: "cover",
-            backgroundRepeat: "no-repeat",
-            //   backgroundPosition: "center",
-          }}
+          data-aos="flip-up"
+          data-aos-duration="500"
+          data-aos-easing="ease-in-out"
         >
           <div className=" texto-1 flex flex-col items-center text-center pt-28 pb-5 ">
-            <h1 className="text-white font-bold  z-20 text-xl">
+            <h1 className="txt-default font-bold  z-20 text-xl">
               YENI VILCATOMA DE LA CRUZ
             </h1>
-            <hr className="text-center rounded-xl border-white w-12  z-10" />
-            <p className="text-white font-normal z-10 text-[12px] ">
+            <hr className="text-center border-default rounded-xl border-white w-12  z-10" />
+            <p className="text-slate-500 font-normal z-10 text-[12px] ">
               FUNDADORA
             </p>
           </div>
-          {/* Parte de fondo */}
-          <div className="absolute bg-gradient-to-t from-black opacity-90  h-full w-full top-0"></div>
         </div>
 
         {/* Texto */}
         <div className="flex flex-row">
           <div className=" w-1/2">
-            <div className="md:min-h-[450px]">
+            <div className="md:min-h-[450px]" data-aos="fade-right">
               <p className="txt-default font-black text-xl">CARGOS EJERCIDOS</p>
               <hr className="border-default w-[200px]" />
               <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700">
@@ -88,7 +83,11 @@ const TeamDesktop = () => {
                 </li>
               </ul>
             </div>
-            <div className="md:min-h-[450px] text-right">
+            <div
+              className="md:min-h-[450px] text-right"
+              data-aos="fade-right"
+              data-aos-offset="100"
+            >
               <div>
                 <p className="txt-default font-black text-xl text-right">
                   DOCENCIA UNIVERSITARIA
@@ -159,14 +158,24 @@ const TeamDesktop = () => {
           </div>
           <div className=" w-1/2 flex flex-col justify-center items-center ">
             <div className="w-full flex flex-col gap-y-10">
-              <div className="h-[400px] flex items-end justify-center ">
+              <div
+                className="h-[400px] flex items-end justify-center "
+                data-aos="fade-left"
+                data-aos-offset="0"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="/images/vilcatomavertical1.webp"
                   alt="Imagen vilcatoma en vertical"
                   className="w-3/4 h-96 object-cover hover:rounded-2xl hover:h-full transition-all duration-700 hover:bg-gradient-to-t hover: from-black "
                 />
               </div>
-              <div className="h-[400px] flex items-end justify-center">
+              <div
+                className="h-[400px] flex items-end justify-center"
+                data-aos="fade-left"
+                data-aos-offset="100"
+                data-aos-easing="ease-in-sine"
+              >
                 <img
                   src="/images/vilcatomavertical2.webp"
                   alt="Imagen vilcatoma en vertical"

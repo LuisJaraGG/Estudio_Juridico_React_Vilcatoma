@@ -1,5 +1,6 @@
 import LottieW from "./LottiePlay";
 import { FaChevronRight } from "react-icons/fa";
+
 const About = () => {
   return (
     <div
@@ -7,7 +8,11 @@ const About = () => {
       className="min-h-[653px] h-screen  relative min-[1090px]:flex md:min-h-[560px]"
     >
       <div className="w-full max-[1090px]:h-full  flex flex-col min-[1090px]:items-center justify-start  pt-16  md:pt-24 min-[1090px]:pt-0 md:max-w-[900px] md:mx-auto min-[1090px]:my-auto">
-        <div className="texto-1 flex flex-col items-center text-center pb-14 md:pb-20 min-[380px]:pb-6 ">
+        <div
+          className="texto-1 flex flex-col items-center text-center pb-14 md:pb-20 min-[380px]:pb-6 "
+          data-aos="flip-up"
+          data-aos-duration="500"
+        >
           <h1 className="txt-default font-black text-3xl">Nosotros</h1>
           <hr className="text-center rounded-xl border-default w-12 z-10" />
           <p className="text-slate-600 font-thin text-sm px-5 leading-none">
@@ -15,7 +20,11 @@ const About = () => {
           </p>
         </div>
         <div className=" md:flex ">
-          <div className="hidden md:flex h-full min-h-[317px] ml-auto">
+          <div
+            className="hidden md:flex h-full min-h-[317px] ml-auto"
+            data-aos="fade-in"
+            data-aos-duration="1000"
+          >
             <div className="min-h-[317px]">
               <img
                 src="/images/img1.webp"
@@ -25,7 +34,11 @@ const About = () => {
             </div>
           </div>
 
-          <div className="txt-2 px-8 max-w-[600px] md:w-1/2 ">
+          <div
+            className="txt-2 px-8 max-w-[600px] md:w-1/2 "
+            data-aos="fade-in"
+            data-aos-duration="1000"
+          >
             <p className=" text-sm text-slate-600 font-light">
               Siempre a tu disposición
             </p>
@@ -45,11 +58,10 @@ const About = () => {
               <li className="txt-default">Solución de controversias</li>
               <li className="txt-default">Asesorías</li>
               <a href="#service">
-
-              <li className="txt-default flex items-center hover:text-black transition-none duration-700">
-                ver mas
-                <FaChevronRight className="ml-2 " />
-              </li>
+                <li className="txt-default flex items-center hover:text-black transition-none duration-700">
+                  ver mas
+                  <FaChevronRight className="ml-2 " />
+                </li>
               </a>
             </ul>
           </div>

@@ -5,6 +5,7 @@ const HeroPage = () => {
       <div
         id="hero"
         className="min-h-[653px] h-screen relative "
+        
         style={{
           backgroundImage: `url('/images/fondo.webp')`,
           backgroundSize: "cover",
@@ -15,7 +16,10 @@ const HeroPage = () => {
         {/* Capa de sombreado */}
         <div className="absolute top-0 left-0 right-0  h-full bg-black opacity-80"></div>
         {/* Contenido */}
-        <div className=" flex flex-col justify-center items-center h-full w-full fade-in">
+        <div
+          className=" flex flex-col justify-center items-center h-full w-full fade-in"
+          
+          >
           <img
             src="/images/logo-completo.png"
             alt="logo del estudio jiridico"

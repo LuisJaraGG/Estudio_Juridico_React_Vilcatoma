@@ -5,7 +5,7 @@ import { Button } from "./ui/button";
 import { Input } from "./ui/input";
 import { Textarea } from "./ui/textarea";
 import LottieW from "./LottiePlay";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaFacebook, FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
 
 import {
   Form,
@@ -85,7 +85,7 @@ const Contact = () => {
 
       <div className="min-[1268px]:max-w-[900px] md:mx-auto md:flex md:items-center  ">
         <div className=" hidden min-[1268px]:flex min-[1268px]:w-1/2 min-[1268px]:justify-center min-[1268px]:items-center">
-          <div className="">
+          <div data-aos="fade-in" data-aos-duration="500">
             <LottieW
               path={"plane"}
               id={"contactanos-fondo4"}
@@ -97,6 +97,8 @@ const Contact = () => {
           <div
             ref={(el) => cardRefs.current.push(el)}
             className="text-center opacity-0"
+            data-aos="flip-up"
+            data-aos-duration="1000"
           >
             <p className="text-[32px] font-black txt-default ">Contactanos</p>
             <hr className="border-default border-1 w-52 mx-auto" />
@@ -104,7 +106,12 @@ const Contact = () => {
               Si tienes interes contacta con nosotros y podremos asesorarte
             </p>
           </div>
-          <div ref={(el) => cardRefs.current.push(el)} className="opacity-0 ">
+          <div
+            ref={(el) => cardRefs.current.push(el)}
+            className="opacity-0 "
+            data-aos="fade-in"
+            data-aos-duration="1000"
+          >
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
@@ -179,6 +186,9 @@ const Contact = () => {
           <div className="flex flex-row gap-x-10 justify-center">
             <a href="https://www.facebook.com/yenivilcatomaofic?locale=es_LA">
               <FaFacebook size={30} className="txt-default "></FaFacebook>
+            </a>
+            <a href="https://www.youtube.com/@vilcatomaabogados8490">
+              <FaYoutube size={30} className="txt-default "></FaYoutube>
             </a>
             <a href="https://twitter.com/YeniVilcatoma2">
               <FaTwitter size={30} className="txt-default "></FaTwitter>

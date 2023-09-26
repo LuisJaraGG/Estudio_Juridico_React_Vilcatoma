@@ -2,31 +2,32 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import LottieW from "./LottiePlay";
 const Team = () => {
   return (
-    <div id="team" className="h-full relative pb-16 md:hidden">
-      <div
-        className=" relative "
-        style={{
-          backgroundImage: `url('/images/fondo2.webp')`,
-          backgroundSize: "cover",
-          backgroundRepeat: "no-repeat",
-          //   backgroundPosition: "center",
-        }}
-      >
-        <div className=" texto-1 flex flex-col items-center text-center pt-20 pb-5 ">
-          <h1 className="text-white font-bold  z-20 text-xl">
+    <div id="team2" className=" relative flex flex-col pb-16 md:hidden">
+      <div className=" relative ">
+        <div className=" texto-1 flex flex-col items-center text-center pt-20 ">
+          <h1
+            className="txt-default font-black  z-20 text-xl"
+            data-aos="flip-up"
+            data-aos-duration="500"
+            data-aos-easing="ease-in-out"
+          >
             YENI VILCATOMA DE LA CRUZ
           </h1>
-          <hr className="text-center rounded-xl border-white w-12  z-10" />
-          <p className="text-white font-normal z-10 text-[12px] ">FUNDADORA</p>
+          <hr className="text-center border-default rounded-xl border-white w-20  z-10" />
+          <p className="txt-default font-normal z-10 text-[12px] ">FUNDADORA</p>
         </div>
         {/* Parte de fondo */}
-        <div className="absolute bg-black opacity-70  h-full w-full top-0"></div>
       </div>
 
-      <div className=" mt-10 relative">
+      <div className="  relative">
         <div className="md:flex md:flex-row  md:pb-10 ">
           <div className="mx-8 md:w-1/2 py-10 md:pl-16">
-            <div className="md:min-h-[450px]">
+            <div
+              className="md:min-h-[450px]"
+              data-aos="fade-in"
+              data-aos-offset="100"
+              data-aos-easing="ease-in-sine"
+            >
               <p className="txt-default font-black">CARGOS EJERCIDOS</p>
               <hr className="border-default w-[200px]" />
               <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700">
@@ -86,7 +87,12 @@ const Team = () => {
               </ul>
             </div>
           </div>
-          <div className="md:w-1/2 md:flex md:justify-end md:items-center ">
+          <div
+            className="md:w-1/2 md:flex md:justify-end md:items-center "
+            data-aos="fade-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
             <div
               className="  mb-16 h-56 md:h-96 md:w-full  md md:mb-0 flex justify-end text-right relative rounded-tl-3xl rounded-bl-3xl shadow-lg  max-w-[400px] md:max-w-[600px]  ml-8 md:flex md:items-end  "
               style={{
@@ -102,9 +108,14 @@ const Team = () => {
         </div>
 
         {/* Parte del lado contrario del equipo */}
-        <div className="md:flex md:flex-row-reverse md:my-10">
+        <div
+          className="md:flex md:flex-row-reverse md:my-10"
+          data-aos="fade-in"
+          data-aos-offset="100"
+          data-aos-easing="ease-in-sine"
+        >
           <div className="px-8 text-right relative md:w-1/2 md:pr-16">
-            <div >
+            <div>
               <div>
                 <p className="txt-default font-black">DOCENCIA UNIVERSITARIA</p>
                 <hr className="border-default w-[220px]  ml-auto" />
@@ -168,10 +179,14 @@ const Team = () => {
                 </ul>
               </div>
             </div>
-
           </div>
           {/* imagen de la izquierda */}
-          <div className="md:w-1/2 ">
+          <div
+            className="md:w-1/2 "
+            data-aos="fade-in"
+            data-aos-offset="100"
+            data-aos-easing="ease-in-sine"
+          >
             <div
               className="relative mr-8 md:h-96  h-56 max-w-[400px] md:max-w-[700px] rounded-tr-3xl rounded-br-3xl "
               style={{
