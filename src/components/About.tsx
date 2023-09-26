@@ -72,6 +72,7 @@ const About = () => {
         className="absolute bottom-0 left-0 right-0 max-[250px]:h-[10%] h-[30%] max-[466px]:h-[20%] md:hidden"
         data-aos="fade-in"
         data-aos-duration="1000"
+        data-aos-offset="0"
       >
         <img
           src="/images/img1.webp"
