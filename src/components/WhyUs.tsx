@@ -5,7 +5,7 @@ const WhyUs = () => {
   return (
     <div
       id="why"
-      className="h-full relative lg:h-screen md:flex md:justify-center md:flex-col "
+      className=" relative lg:h-screen md:flex md:justify-center md:items-center md:flex-col min-h-[805px] "
     >
       <div className="md:max-w-[900px] md:mx-auto">
         <div

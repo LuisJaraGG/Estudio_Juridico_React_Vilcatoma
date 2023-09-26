@@ -79,11 +79,11 @@ const Contact = () => {
   return (
     <div
       id="contactanos"
-      className=" md:flex  h-screen md:items-center  relative pb-20   pt-24 min-h-[805px] lg:min-h-[0px] "
+      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-[0px] "
     >
       {/* hasta 1088 px es mono */}
 
-      <div className="min-[1268px]:max-w-[900px] md:mx-auto md:flex md:items-center  ">
+      <div className="min-[1268px]:max-w-[900px] md:mx-auto md:flex md:items-center pb-20   pt-24  ">
         <div className=" hidden min-[1268px]:flex min-[1268px]:w-1/2 min-[1268px]:justify-center min-[1268px]:items-center">
           <div data-aos="fade-in" data-aos-duration="500">
             <LottieW

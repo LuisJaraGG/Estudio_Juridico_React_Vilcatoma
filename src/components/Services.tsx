@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <div
       id="service"
-      className="relative py-16 md:py-24 lg:h-screen flex flex-col items-center justify-center "
+      className="relative py-16 md:py-24 lg:h-screen flex flex-col items-center justify-center md:min-h-[805px] min-h-none "
     >
       <div className=" flex flex-col justify-start  items-center md:max-w-[900px] md:mx-auto lg:my-auto">
         <div
