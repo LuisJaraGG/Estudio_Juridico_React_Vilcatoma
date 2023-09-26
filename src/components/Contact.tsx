@@ -76,7 +76,7 @@ const Contact = () => {
   return (
     <div
       id="contactanos"
-      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-[0px] overflow-hidden"
+      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-[0px] overflow-hidden lg:h-screen"
     >
       {/* hasta 1088 px es mono */}
 
