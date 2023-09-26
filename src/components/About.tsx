@@ -5,7 +5,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-[653px] h-screen  relative min-[1090px]:flex md:min-h-[560px]"
+      className="min-h-[653px] h-screen  relative min-[1090px]:flex md:min-h-[560px] overflow-hidden"
     >
       <div className="w-full max-[1090px]:h-full  flex flex-col min-[1090px]:items-center justify-start  pt-16  md:pt-24 min-[1090px]:pt-0 md:max-w-[900px] md:mx-auto min-[1090px]:my-auto">
         <div
@@ -22,7 +22,7 @@ const About = () => {
         <div className=" md:flex ">
           <div
             className="hidden md:flex h-full min-h-[317px] ml-auto"
-            data-aos="fade-in"
+            data-aos="fade-right"
             data-aos-duration="1000"
           >
             <div className="min-h-[317px]">
@@ -36,7 +36,7 @@ const About = () => {
 
           <div
             className="txt-2 px-8 max-w-[600px] md:w-1/2 "
-            data-aos="fade-in"
+            data-aos="fade-left"
             data-aos-duration="1000"
           >
             <p className=" text-sm text-slate-600 font-light">
@@ -68,7 +68,11 @@ const About = () => {
         </div>
       </div>
 
-      <div className="absolute bottom-0 left-0 right-0 max-[250px]:h-[10%] h-[30%] max-[466px]:h-[20%] md:hidden">
+      <div
+        className="absolute bottom-0 left-0 right-0 max-[250px]:h-[10%] h-[30%] max-[466px]:h-[20%] md:hidden"
+        data-aos="fade-in"
+        data-aos-duration="1000"
+      >
         <img
           src="/images/img1.webp"
           className="object-cover h-full w-full"
@@ -82,7 +86,7 @@ const About = () => {
         <LottieW
           path={"top2"}
           id={"contactanos-fondo4"}
-          styles={"h-full  "}
+          styles={"h-full"}
         ></LottieW>
       </div>
     </div>

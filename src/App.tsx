@@ -11,12 +11,13 @@ import TeamDesktop from "./components/TeamDesktop";
 import { Toaster } from "./components/ui/toaster";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import {useEffect} from "react";
+import { useEffect } from "react";
 function App() {
   useEffect(() => {
-    AOS.init();
-  }, [])
-  
+        AOS.init();
+
+  }, []);
+
   return (
     <div className="scroll-smooth">
       <NavDesktop></NavDesktop>

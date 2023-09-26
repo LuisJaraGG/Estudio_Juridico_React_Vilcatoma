@@ -2,7 +2,10 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import LottieW from "./LottiePlay";
 const Team = () => {
   return (
-    <div id="team2" className=" relative flex flex-col pb-16 md:hidden">
+    <div
+      id="team2"
+      className=" relative flex flex-col pb-16 md:hidden overflow-hidden"
+    >
       <div className=" relative ">
         <div className=" texto-1 flex flex-col items-center text-center pt-20 ">
           <h1
@@ -24,7 +27,7 @@ const Team = () => {
           <div className="mx-8 md:w-1/2 py-10 md:pl-16">
             <div
               className="md:min-h-[450px]"
-              data-aos="fade-in"
+              data-aos="fade-right"
               data-aos-offset="100"
               data-aos-easing="ease-in-sine"
             >
@@ -89,7 +92,7 @@ const Team = () => {
           </div>
           <div
             className="md:w-1/2 md:flex md:justify-end md:items-center "
-            data-aos="fade-in"
+            data-aos="fade-left"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
           >
@@ -110,7 +113,7 @@ const Team = () => {
         {/* Parte del lado contrario del equipo */}
         <div
           className="md:flex md:flex-row-reverse md:my-10"
-          data-aos="fade-in"
+          data-aos="fade-left"
           data-aos-offset="100"
           data-aos-easing="ease-in-sine"
         >
@@ -183,7 +186,7 @@ const Team = () => {
           {/* imagen de la izquierda */}
           <div
             className="md:w-1/2 "
-            data-aos="fade-in"
+            data-aos="fade-right"
             data-aos-offset="100"
             data-aos-easing="ease-in-sine"
           >

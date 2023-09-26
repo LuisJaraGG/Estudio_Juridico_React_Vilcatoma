@@ -12,6 +12,7 @@ const HeroPage = () => {
           backgroundRepeat: "no-repeat",
           //   backgroundPosition: "center",
         }}
+        data-aos="fade-in" data-aos-duration="500"
       >
         {/* Capa de sombreado */}
         <div className="absolute top-0 left-0 right-0  h-full bg-black opacity-80"></div>

@@ -2,7 +2,7 @@ import LottieW from "./LottiePlay";
 
 const LocateUs = () => {
   return (
-    <div id="locate" className="h-screen relative ">
+    <div id="locate" className="h-screen relative overflow-hidden ">
       <div className="h-full flex flex-col justify-start items-center pt-16 md:pt-24 md:max-w-[900px] md:mx-auto">
         <div
           className=" texto-1 flex flex-col items-center text-center pb-5"

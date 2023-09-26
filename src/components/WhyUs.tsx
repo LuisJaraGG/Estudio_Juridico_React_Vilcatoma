@@ -5,7 +5,7 @@ const WhyUs = () => {
   return (
     <div
       id="why"
-      className=" relative lg:h-screen md:flex md:justify-center md:items-center md:flex-col min-h-[805px] "
+      className=" relative lg:h-screen md:flex md:justify-center md:items-center md:flex-col min-h-[805px] overflow-hidden"
     >
       <div className="md:max-w-[900px] md:mx-auto">
         <div
@@ -31,19 +31,19 @@ const WhyUs = () => {
             switch (eleccion.icon) {
               case 1:
                 iconoelement = <FaVolumeUp className="w-full txt-default " />;
-                animation = "fade-in";
+                animation = "fade-right";
                 break;
               case 2:
                 iconoelement = <FaGlobe className="w-full txt-default " />;
-                animation = "fade-in";
+                animation = "fade-left";
                 break;
               case 3:
                 iconoelement = <FaStar className="w-full txt-default " />;
-                animation = "fade-in";
+                animation = "fade-right";
                 break;
               case 4:
                 iconoelement = <FaLock className="w-full txt-default " />;
-                animation = "fade-in";
+                animation = "fade-left";
                 break;
 
               default:

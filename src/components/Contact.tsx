@@ -14,7 +14,6 @@ import {
   FormControl,
   FormField,
   FormItem,
-  FormLabel,
   FormMessage,
 } from "./ui/form";
 
@@ -77,7 +76,7 @@ const Contact = () => {
   return (
     <div
       id="contactanos"
-      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-[0px] "
+      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-[0px] overflow-hidden"
     >
       {/* hasta 1088 px es mono */}
 
@@ -114,12 +113,11 @@ const Contact = () => {
                   name="name"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Nombre</FormLabel>
                       <FormControl>
                         <Input
                           className="w/full"
                           disabled={isLoading}
-                          placeholder="Nombre"
+                          placeholder="Ingrese nombre"
                           {...field}
                         />
                       </FormControl>
@@ -132,12 +130,11 @@ const Contact = () => {
                   name="phone"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Celular</FormLabel>
                       <FormControl>
                         <Input
                           className="w/full"
                           disabled={isLoading}
-                          placeholder="Celular"
+                          placeholder="Ingrese numero de celular"
                           {...field}
                         />
                       </FormControl>
@@ -150,12 +147,11 @@ const Contact = () => {
                   name="email"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Email</FormLabel>
                       <FormControl>
                         <Input
                           className="w/full"
                           disabled={isLoading}
-                          placeholder="usuario@gmail.com"
+                          placeholder="Ingrese email"
                           {...field}
                         />
                       </FormControl>
@@ -168,10 +164,9 @@ const Contact = () => {
                   name="message"
                   render={({ field }) => (
                     <FormItem>
-                      <FormLabel>Mensaje</FormLabel>
                       <FormControl>
                         <Textarea
-                          className="w/full"
+                          className="w/full mb-5"
                           disabled={isLoading}
                           rows={5}
                           placeholder="Descripción de su cunsulta"
