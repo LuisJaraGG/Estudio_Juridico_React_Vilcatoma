@@ -2,7 +2,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa";
 import LottieW from "./LottiePlay";
 const TeamDesktop = () => {
   return (
-    <div id="team" className=" hidden md:flex relative">
+    <div id="team" className=" hidden md:flex relative overflow-hidden">
       <div className=" w-[900px] mx-auto my-auto">
         <div
           className=" relative w-full  mb-10"
@@ -23,7 +23,7 @@ const TeamDesktop = () => {
 
         {/* Texto */}
         <div className="flex flex-row">
-          <div className=" w-1/2">
+          <div className=" w-1/2 pl-16">
             <div className="md:min-h-[450px]" data-aos="fade-right">
               <p className="txt-default font-black text-xl">CARGOS EJERCIDOS</p>
               <hr className="border-default w-[200px]" />
@@ -86,7 +86,7 @@ const TeamDesktop = () => {
             <div
               className="md:min-h-[450px] text-right"
               data-aos="fade-right"
-              data-aos-offset="100"
+              data-aos-offset="20"
             >
               <div>
                 <p className="txt-default font-black text-xl text-right">
