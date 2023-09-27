@@ -16,7 +16,7 @@ const About = () => {
           <h1 className="txt-default font-black text-4xl">Nosotros</h1>
           <hr className="text-center rounded-xl border-default w-12 z-10" />
           <p className="text-slate-600 font-thin text-base md:text-lg px-5 leading-none">
-            Con la experiencia y compromiso necesarios para ti
+            Con la experiencia y compromiso necesarios para tí
           </p>
         </div>
         <div className=" md:flex md:justify-center ">
