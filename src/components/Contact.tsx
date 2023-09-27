@@ -113,7 +113,7 @@ const Contact = () => {
               data-aos="flip-up"
               data-aos-duration="1000"
             >
-              <p className="text-[32px] font-black txt-default ">Contactanos</p>
+              <p className="text-[32px] font-black txt-default ">Contáctanos</p>
               <hr className="border-default border-1 w-52 mx-auto" />
               <p className="text-slate-600 font-normal text-sm ">
                 Si tienes interes contacta con nosotros y podremos asesorarte

@@ -47,7 +47,7 @@ const About = () => {
             <hr className=" border-default mb-1" />
 
             <p className="text-slate-600 text-sm md:text-lg pb-2 text-justify">
-              Más de 14 años al servicio del publico, brindando servicios
+              Más de 14 años al servicio del público, brindando servicios
               jurídicos de la mejor calidad asegurando los resultados de tu
               caso.
             </p>

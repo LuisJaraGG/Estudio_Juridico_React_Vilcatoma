@@ -20,7 +20,7 @@ const NavDesktop = () => {
             <li>Servicios</li>
           </a>
           <a href="#why">
-            <li>Eligenos</li>
+            <li>Elígenos</li>
           </a>
           <a href="#team">
             <li>Equipo</li>
