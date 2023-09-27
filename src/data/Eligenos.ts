@@ -17,7 +17,7 @@ export const Elecciones: {
     {
     icon: 3,
     tittle: "Creativos y Eficientes",
-    description: "Demonstramos creatividad al buscar eficaces soluciones para abordar sus desafíos."
+    description: "Demostramos creatividad al buscar eficaces soluciones para abordar sus desafíos."
   },
     {
     icon: 4,

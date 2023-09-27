@@ -102,7 +102,7 @@ const Services = () => {
             <FaBuilding className="w-10 h-10"></FaBuilding>
             <p className="font-bold">Derecho Societario</p>
             <p className="text-slate-600">
-              Apoyo a empresas desde la formalización hasta asesoramiento
+              Apoyo a empresas desde la formalización hasta asesoramientos
               legales
             </p>
           </div>
