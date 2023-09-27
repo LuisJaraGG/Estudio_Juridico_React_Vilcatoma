@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <div
       id="service"
-      className="relative py-16 md:py-24 lg:h-screen flex flex-col items-center justify-center md:min-h-[805px] min-h-none overflow-hidden "
+      className="relative py-16 md:py-24 md:h-screen flex flex-col items-center justify-center md:min-h-[805px] min-h-none overflow-hidden "
     >
       <div className=" flex flex-col justify-start  items-center md:max-w-[900px] md:mx-auto lg:my-auto">
         <div
@@ -30,7 +30,7 @@ const Services = () => {
           </p>
         </div>
 
-        <div className="bloque-2 text-center flex flex-wrap justify-center gap-x-10 gap-y-4 txt-default pb-10 mx-5 md:text-sm">
+        <div className="bloque-2 text-center flex flex-wrap justify-center gap-x-10 gap-y-4 txt-default pb-10 mx-5 md:text-sm md:gap-y-16">
           <div
             className="flex flex-col items-center max-w-[260px]"
             data-aos="flip-left"

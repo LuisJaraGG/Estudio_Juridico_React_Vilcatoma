@@ -5,41 +5,39 @@ const About = () => {
   return (
     <div
       id="about"
-      className="min-h-[653px] h-screen  relative min-[1090px]:flex md:min-h-[560px] overflow-hidden"
+      className="min-h-[653px] h-screen  relative md:flex md:min-h-[560px] overflow-hidden md:items-center"
     >
-      <div className="w-full max-[1090px]:h-full  flex flex-col min-[1090px]:items-center justify-start  pt-16  md:pt-24 min-[1090px]:pt-0 md:max-w-[900px] md:mx-auto min-[1090px]:my-auto">
+      <div className="md:max-w-[900px] md:mx-auto ">
         <div
-          className="texto-1 flex flex-col items-center text-center pb-14 md:pb-20 min-[380px]:pb-6 "
+          className="texto-1 flex flex-col items-center text-center pb-12 pt-16 md:pb-20 min-[380px]:pb-6 "
           data-aos="flip-up"
           data-aos-duration="500"
         >
-          <h1 className="txt-default font-black text-3xl">Nosotros</h1>
+          <h1 className="txt-default font-black text-4xl">Nosotros</h1>
           <hr className="text-center rounded-xl border-default w-12 z-10" />
-          <p className="text-slate-600 font-thin text-sm px-5 leading-none">
+          <p className="text-slate-600 font-thin text-base md:text-lg px-5 leading-none">
             Con la experiencia y compromiso necesarios para ti
           </p>
         </div>
-        <div className=" md:flex ">
+        <div className=" md:flex md:justify-center ">
           <div
-            className="hidden md:flex h-full min-h-[317px] ml-auto"
+            className="hidden md:flex max-h-[100%]  w-[225px] rounded-3xl"
             data-aos="fade-right"
             data-aos-duration="1000"
-          >
-            <div className="min-h-[317px]">
-              <img
-                src="/images/img1.webp"
-                alt="imagen de Nosotros"
-                className="w-[225px] ml-auto rounded-3xl h-full object-fill min-h-[317px]"
-              />
-            </div>
-          </div>
+            style={{
+              backgroundImage: `url('/images/img1.webp')`,
+              backgroundSize: "cover",
+              backgroundRepeat: "no-repeat",
+              //   backgroundPosition: "center",
+            }}
+          ></div>
 
           <div
-            className="txt-2 px-8 max-w-[600px] md:w-1/2 "
+            className="txt-2 px-8 md:px-0 md:pl-8 max-w-[600px] md:w-1/2 "
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <p className=" text-sm text-slate-600 font-light">
+            <p className=" text-sm text-slate-600 font-light md:text-lg">
               Siempre a tu disposición
             </p>
             <p className="text-2xl font-black leading-none pb-2 min-[370px]:text-4xl">
@@ -48,18 +46,18 @@ const About = () => {
             </p>
             <hr className=" border-default mb-1" />
 
-            <p className="text-slate-600 text-sm pb-2">
+            <p className="text-slate-600 text-sm md:text-lg pb-2 text-justify">
               Más de 14 años al servicio del publico, brindando servicios
               jurídicos de la mejor calidad asegurando los resultados de tu
               caso.
             </p>
-            <ul className="font-bold">
-              <li className="txt-default">Ligitación</li>
+            <ul className="font-bold flex flex-col gap-y-1">
+              <li className="txt-default">Litigación</li>
               <li className="txt-default">Solución de controversias</li>
               <li className="txt-default">Asesorías</li>
               <a href="#service">
                 <li className="txt-default flex items-center hover:text-black transition-none duration-700">
-                  ver mas
+                  Ver mas
                   <FaChevronRight className="ml-2 " />
                 </li>
               </a>
@@ -68,6 +66,7 @@ const About = () => {
         </div>
       </div>
 
+      {/* Fodo para movil */}
       <div
         className="absolute bottom-0 left-0 right-0 max-[250px]:h-[10%] h-[30%] max-[466px]:h-[20%] md:hidden"
         data-aos="fade-in"

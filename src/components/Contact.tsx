@@ -76,11 +76,11 @@ const Contact = () => {
   return (
     <div
       id="contactanos"
-      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-none overflow-hidden lg:h-screen"
+      className=" flex  items-center  relative min-h-[805px]  overflow-hidden h-screen"
     >
       {/* hasta 1088 px es mono */}
 
-      <div className="min-[1268px]:max-w-[900px] md:mx-auto md:flex md:items-center pb-20   pt-24  ">
+      <div className="min-[1268px]:max-w-[900px] mx-auto md:flex md:items-center   ">
         <div className=" hidden min-[1268px]:flex min-[1268px]:w-1/2 min-[1268px]:justify-center min-[1268px]:items-center">
           <div data-aos="fade-in" data-aos-duration="500">
             <LottieW
@@ -90,7 +90,7 @@ const Contact = () => {
             ></LottieW>
           </div>
         </div>
-        <div className=" flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8 px-8 min-[1268px]:w-1/2">
+        <div className=" flex flex-col gap-y-16 md:gap-y-8 justify-center max-w-[450px] md:max-w-[400px] mx-auto  md:px-10 min-[830px]:px-8  min-[1268px]:w-1/2 px-5 ">
           <div
             className="text-center "
             data-aos="flip-up"
@@ -103,7 +103,12 @@ const Contact = () => {
             </p>
           </div>
 
-          <div data-aos="fade-in" data-aos-duration="1000" data-aos-offset="0">
+          <div
+            data-aos="fade-in"
+            data-aos-duration="1000"
+            data-aos-offset="0"
+            className=""
+          >
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
