@@ -76,7 +76,7 @@ const Contact = () => {
   return (
     <div
       id="contactanos"
-      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-[0px] overflow-hidden lg:h-screen"
+      className=" md:flex  md:items-center  relative md:min-h-[805px] lg:min-h-none overflow-hidden lg:h-screen"
     >
       {/* hasta 1088 px es mono */}
 
@@ -102,7 +102,8 @@ const Contact = () => {
               Si tienes interes contacta con nosotros y podremos asesorarte
             </p>
           </div>
-          <div data-aos="fade-in" data-aos-duration="1000">
+
+          <div data-aos="fade-in" data-aos-duration="1000" data-aos-offset="0">
             <Form {...form}>
               <form
                 onSubmit={form.handleSubmit(onSubmit)}
