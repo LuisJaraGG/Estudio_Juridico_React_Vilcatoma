@@ -1,6 +1,6 @@
 const NavDesktop = () => {
   return (
-    <div className="hidden md:flex bg-black opacity-80 fixed top-0 left-0 right-0 z-40 ">
+    <div className="hidden md:flex bg-black opacity-80 fixed top-0 left-0 right-0 z-50 ">
       <div className=" flex justify-between w-full max-w-[900px] mx-auto p-4">
         <a href="#hero">
           <img
