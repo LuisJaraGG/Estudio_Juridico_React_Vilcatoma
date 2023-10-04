@@ -24,10 +24,10 @@ const HeroPage = () => {
           <img
             src="/images/logo-completo.png"
             alt="logo del estudio jiridico"
-            className="w-28 md:w-32 z-10"
+            className="w-28 md:w-40 z-10"
           />
-          <p className=" leading-tight text-center text-white z-10   md:text-xl  mix-[400px]:text-xl mt-5 tracking-wider mb-3 titulo">
-            <hr className="z-10 mx-10   flex   rounded-full  md:-mb-1 " />
+          <p className=" text-center text-white z-10   md:text-xl  mix-[400px]:text-xl mt-5 tracking-wider mb-3 titulo">
+            <hr className="z-10 mx-10   flex   rounded-full  md:-mb-[1px] " />
             Servicios y asesoramientos legales
           </p>
           <button className=" z-10 rounded-3xl border border-white bg-transparent  text-white py-1 px-4 hover:border-[#B5853E] font-normal  hover:bg-[#B5853E] transition-all duration-300 titulo">
