@@ -113,9 +113,9 @@ const Contact = () => {
               data-aos="flip-up"
               data-aos-duration="1000"
             >
-              <p className="text-[32px] font-black txt-default ">Contáctanos</p>
+              <p className="text-[32px] font-black txt-default titulo">Contáctanos</p>
               <hr className="border-default border-1 w-52 mx-auto" />
-              <p className="text-slate-600 font-normal text-sm ">
+              <p className="text-slate-600 font-normal text-sm texto">
                 Si tienes interes contacta con nosotros y podremos asesorarte
               </p>
             </div>
@@ -129,7 +129,7 @@ const Contact = () => {
               <Form {...form}>
                 <form
                   onSubmit={form.handleSubmit(onSubmit)}
-                  className="space-y-4 md:space-y-1"
+                  className="space-y-4 md:space-y-1 texto"
                 >
                   <FormField
                     control={form.control}
@@ -203,7 +203,7 @@ const Contact = () => {
                   <Button
                     disabled={isLoading}
                     type="submit"
-                    className=" bg-default hover:from-blue-900 hover:to-blue-800 w-full rounded-none"
+                    className=" bg-default hover:from-blue-900 hover:to-blue-800 w-full rounded-none titulo"
                   >
                     Enviar
                   </Button>

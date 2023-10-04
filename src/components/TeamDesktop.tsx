@@ -11,11 +11,11 @@ const TeamDesktop = () => {
           data-aos-easing="ease-in-out"
         >
           <div className=" texto-1 flex flex-col items-center text-center pt-28 pb-5 ">
-            <h1 className="txt-default font-bold  z-20 text-xl">
+            <h1 className="txt-default font-bold  z-20 text-xl titulo">
               YENI VILCATOMA DE LA CRUZ
             </h1>
             <hr className="text-center border-default rounded-xl border-white w-12  z-10" />
-            <p className="text-slate-500 font-normal z-10 text-[12px] ">
+            <p className="text-slate-500 font-normal z-10 text-[12px]  subtitulo">
               FUNDADORA
             </p>
           </div>
@@ -25,9 +25,9 @@ const TeamDesktop = () => {
         <div className="flex flex-row">
           <div className=" w-1/2 pl-16">
             <div className="md:min-h-[450px]" data-aos="fade-right">
-              <p className="txt-default font-black text-xl">CARGOS EJERCIDOS</p>
+              <p className="txt-default font-black text-xl titulo">CARGOS EJERCIDOS</p>
               <hr className="border-default w-[200px]" />
-              <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700">
+              <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700 texto">
                 <li>
                   <div className="flex items-start w-full">
                     <FaChevronRight className="txt-default h-4 mt-1"></FaChevronRight>
@@ -89,11 +89,11 @@ const TeamDesktop = () => {
               data-aos-offset="20"
             >
               <div>
-                <p className="txt-default font-black text-xl text-right">
+                <p className="txt-default font-black text-xl text-right titulo">
                   DOCENCIA UNIVERSITARIA
                 </p>
                 <hr className="border-default w-[220px]  ml-auto" />
-                <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700">
+                <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700 texto">
                   <li>
                     <div className="flex items-start">
                       <p className=" w-11/12 ml-auto">
@@ -114,11 +114,11 @@ const TeamDesktop = () => {
               </div>
 
               <div>
-                <p className="txt-default font-black text-xl text-right">
+                <p className="txt-default font-black text-xl text-right titulo">
                   ESTUDIOS REALIZADOS
                 </p>
                 <hr className="border-default w-[200px]  ml-auto" />
-                <ul className="flex flex-col gap-y-5 mb-16 mt-2 text-slate-700">
+                <ul className="flex flex-col gap-y-5 mb-16 mt-2 text-slate-700 texto">
                   <li>
                     <div className="flex items-start">
                       <p className=" w-11/12 ml-auto">

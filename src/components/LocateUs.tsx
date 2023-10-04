@@ -10,7 +10,7 @@ const LocateUs = () => {
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
-          <h1 className="txt-default font-black text-3xl">Ubícanos</h1>
+          <h1 className="txt-default font-black text-3xl titulo">Ubícanos</h1>
           <hr className="text-center rounded-xl border-default w-12 z-10" />
         </div>
         <iframe

@@ -74,6 +74,16 @@
     @apply bg-background text-foreground;
   }
 }
+.titulo{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.subtitulo{
+  font-family: Georgia, serif;
+}
+.texto{
+  font-family: Arial, sans-serif;
+}
 
 .txt-default{
   color: #B5853E;

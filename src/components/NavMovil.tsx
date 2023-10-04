@@ -31,7 +31,7 @@ const NavMovil = () => {
             >
               <SheetHeader>
                 <SheetDescription>
-                  <ul className=" flex flex-col h-full w-full gap-8 text-base mt-14 text-white font-extrabold z-20">
+                  <ul className=" flex flex-col h-full w-full gap-8 text-base mt-14 text-white font-extrabold z-20 titulo">
                     <SheetClose asChild>
                       <li>
                         <a href="#hero">Inicio</a>

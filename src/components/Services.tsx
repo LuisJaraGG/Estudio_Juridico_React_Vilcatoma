@@ -23,9 +23,9 @@ const Services = () => {
           data-aos-offset="50"
           data-aos-easing="ease-in-out"
         >
-          <h1 className="txt-default font-black text-3xl">Servicios</h1>
+          <h1 className="txt-default font-black text-3xl titulo">Servicios</h1>
           <hr className="text-center rounded-xl border-default w-12 z-10" />
-          <p className="text-slate-600 font-thin text-sm px-8">
+          <p className="text-slate-600 font-thin text-md px-8 subtitulo">
             Encargados de dar el mejor servicio en fabor de tus intereses
           </p>
         </div>
@@ -38,8 +38,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaUsers className="w-10 h-10"></FaUsers>
-            <p className="font-bold">Litigación</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Litigación</p>
+            <p className="text-slate-600 texto">
               Especializados en dar soluciones efectivas en casos complejos
             </p>
           </div>
@@ -50,8 +50,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaHandshake className="w-10 h-10"></FaHandshake>
-            <p className="font-bold">Solución de controversias</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Solución de controversias</p>
+            <p className="text-slate-600 texto">
               Desde delitos Informáticos hasta Protección de testigos
             </p>
           </div>
@@ -62,8 +62,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaBook className="w-10 h-10"></FaBook>
-            <p className="font-bold">Asesorías</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Asesorías</p>
+            <p className="text-slate-600 texto">
               Enfocados en la defensa de cualquier tipo de litigio penal y
               constitucional penal
             </p>
@@ -75,8 +75,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaBalanceScale className="w-10 h-10"></FaBalanceScale>
-            <p className="font-bold">Derecho Administrativo</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Derecho Administrativo</p>
+            <p className="text-slate-600 texto">
               Te defendemos de entidades gubernamentales y otras
             </p>
           </div>
@@ -87,8 +87,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaBriefcase className="w-10 h-10"></FaBriefcase>
-            <p className="font-bold">Derecho constitucional</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Derecho constitucional</p>
+            <p className="text-slate-600 texto">
               Relacionados con derechos fundamentales, como hábeas corpus,
               habeas data y otros
             </p>
@@ -100,8 +100,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaBuilding className="w-10 h-10"></FaBuilding>
-            <p className="font-bold">Derecho Societario</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Derecho Societario</p>
+            <p className="text-slate-600 texto">
               Apoyo a empresas desde la formalización hasta asesoramientos
               legales
             </p>
@@ -113,8 +113,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaGavel className="w-10 h-10"></FaGavel>
-            <p className="font-bold">Derecho civil</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Derecho civil</p>
+            <p className="text-slate-600 texto">
               Apoyo en asuntos civiles, como alimentos, divorcios, tenencia
             </p>
           </div>
@@ -125,8 +125,8 @@ const Services = () => {
             data-aos-offset="50"
           >
             <FaMoneyBill className="w-10 h-10"></FaMoneyBill>
-            <p className="font-bold">Derecho concursal</p>
-            <p className="text-slate-600">
+            <p className="font-bold titulo">Derecho concursal</p>
+            <p className="text-slate-600 texto">
               Desde la formalización hasta asesoramiento legal, brindamos un
               sólido respaldo a tu empresa en cada paso
             </p>

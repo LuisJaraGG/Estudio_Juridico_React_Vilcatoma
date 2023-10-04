@@ -9,7 +9,7 @@ const NavDesktop = () => {
             className="h-10  "
           />
         </a>
-        <ul className="flex  gap-x-3 text-white items-center text-sm">
+        <ul className="flex  gap-x-3 text-white items-center   titulo">
           <a href="#hero">
             <li>Inicio</li>
           </a>

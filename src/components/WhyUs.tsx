@@ -14,12 +14,12 @@ const WhyUs = () => {
           data-aos-duration="500"
           data-aos-easing="ease-in-out"
         >
-          <div className=" texto-1 flex flex-col items-center text-center pb-16">
+          <div className=" texto-1 flex flex-col items-center text-center pb-16 titulo ">
             <h1 className="txt-default font-black text-3xl">
               Porque elegirnos
             </h1>
             <hr className="text-center rounded-xl border-default w-32 mt-1 z-10" />
-            <p className="text-slate-600 font-thin text-sm px-8">
+            <p className="text-slate-600 font-thin text-md px-8 subtitulo">
               Si aún tienes dudas te presentamos porqué confiar en nosotros
             </p>
           </div>
@@ -56,10 +56,10 @@ const WhyUs = () => {
                 data-aos={animation}
               >
                 <div className="  bg-white rounded-lg shadow-lg px-4 pb-4 pt-10 z-10 md:h-[200px]   ">
-                  <p className="txt-default font-bold text-center ">
+                  <p className="txt-default font-bold text-center titulo ">
                     {eleccion.tittle}
                   </p>
-                  <p className="text-center text-slate-600">
+                  <p className="text-center text-slate-600 texto">
                     {eleccion.description}
                   </p>
                 </div>

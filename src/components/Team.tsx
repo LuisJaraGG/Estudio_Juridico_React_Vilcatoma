@@ -9,7 +9,7 @@ const Team = () => {
       <div className=" relative ">
         <div className=" texto-1 flex flex-col items-center text-center pt-20 ">
           <h1
-            className="txt-default font-black  z-20 text-xl"
+            className="txt-default font-black  z-20 text-xl titulo"
             data-aos="flip-up"
             data-aos-duration="500"
             data-aos-easing="ease-in-out"
@@ -17,7 +17,7 @@ const Team = () => {
             YENI VILCATOMA DE LA CRUZ
           </h1>
           <hr className="text-center border-default rounded-xl border-white w-20  z-10" />
-          <p className="txt-default font-normal z-10 text-[12px] ">FUNDADORA</p>
+          <p className="txt-default font-normal z-10 text-[12px] subtitulo">FUNDADORA</p>
         </div>
         {/* Parte de fondo */}
       </div>
@@ -31,9 +31,9 @@ const Team = () => {
               data-aos-offset="100"
               data-aos-easing="ease-in-sine"
             >
-              <p className="txt-default font-black">CARGOS EJERCIDOS</p>
+              <p className="txt-default font-black titulo">CARGOS EJERCIDOS</p>
               <hr className="border-default w-[200px]" />
-              <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700">
+              <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700 texto">
                 <li>
                   <div className="flex items-start w-full">
                     <FaChevronRight className="txt-default h-4 mt-1"></FaChevronRight>
@@ -120,9 +120,9 @@ const Team = () => {
           <div className="px-8 text-right relative md:w-1/2 md:pr-16">
             <div>
               <div>
-                <p className="txt-default font-black">DOCENCIA UNIVERSITARIA</p>
+                <p className="txt-default font-black titulo">DOCENCIA UNIVERSITARIA</p>
                 <hr className="border-default w-[220px]  ml-auto" />
-                <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700">
+                <ul className="flex flex-col gap-y-5 mb-5 mt-2 text-slate-700 texto">
                   <li>
                     <div className="flex items-start">
                       <p className=" w-11/12 ml-auto">
@@ -143,9 +143,9 @@ const Team = () => {
               </div>
 
               <div>
-                <p className="txt-default font-black">ESTUDIOS REALIZADOS</p>
+                <p className="txt-default font-black titulo">ESTUDIOS REALIZADOS</p>
                 <hr className="border-default w-[200px]  ml-auto" />
-                <ul className="flex flex-col gap-y-5 mb-16 mt-2 text-slate-700">
+                <ul className="flex flex-col gap-y-5 mb-16 mt-2 text-slate-700 texto">
                   <li>
                     <div className="flex items-start">
                       <p className=" w-11/12 ml-auto">

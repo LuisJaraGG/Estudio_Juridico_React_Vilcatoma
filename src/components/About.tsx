@@ -13,9 +13,9 @@ const About = () => {
           data-aos="flip-up"
           data-aos-duration="500"
         >
-          <h1 className="txt-default font-black text-4xl">Nosotros</h1>
+          <h1 className="txt-default font-black text-4xl titulo">Nosotros</h1>
           <hr className="text-center rounded-xl border-default w-12 z-10" />
-          <p className="text-slate-600 font-thin text-base md:text-lg px-5 leading-none">
+          <p className="text-slate-600 font-thin text-base md:text-lg px-5 leading-none subtitulo">
             Con la experiencia y compromiso necesarios para tí
           </p>
         </div>
@@ -37,27 +37,26 @@ const About = () => {
             data-aos="fade-left"
             data-aos-duration="1000"
           >
-            <p className=" text-sm text-slate-600 font-light md:text-lg">
+            <p className=" text-sm text-slate-600 font-light md:text-lg subtitulo">
               Siempre a tu disposición
             </p>
-            <p className="text-2xl font-black leading-none pb-2 min-[370px]:text-4xl">
-              Estudio Jurídico <br />{" "}
-              <span className="txt-default">Vilcatoma & Asociados</span>
+            <p className="text-2xl font-black leading-none pb-2 min-[370px]:text-4xl md:text-[40px] titulo">
+              Estudio Jurídico <br /> Vilcatoma & Asociados
             </p>
             <hr className=" border-default mb-1" />
 
-            <p className="text-slate-600 text-sm md:text-lg pb-2 text-justify">
+            <p className="text-slate-600 text-sm md:text-lg pb-2 text-justify texto">
               Más de 14 años al servicio del público, brindando servicios
               jurídicos de la mejor calidad asegurando los resultados de tu
               caso.
             </p>
-            <ul className="font-bold flex flex-col gap-y-1">
+            <ul className="font-bold flex flex-col gap-y-1 ">
               <li className="txt-default">Litigación</li>
               <li className="txt-default">Solución de controversias</li>
               <li className="txt-default">Asesorías</li>
               <a href="#service">
-                <li className="txt-default flex items-center hover:text-black transition-none duration-700">
-                  Ver mas
+                <li className="txt-default flex items-center jus hover:text-black transition-all duration-300">
+                  Conocer más
                   <FaChevronRight className="ml-2 " />
                 </li>
               </a>
